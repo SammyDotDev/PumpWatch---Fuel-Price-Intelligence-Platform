@@ -1,0 +1,293 @@
+# File Tree: kasuwa-mobile-client-ui
+
+**Generated:** 4/6/2026, 5:19:03 PM
+**Root Path:** `/home/sammy/Desktop/DEV/react-native/confidential/kasuwa-mobile-client-ui`
+
+```
+├── 📁 api
+│   └── 📄 api.ts
+├── 📁 app
+│   ├── 📁 (auth)
+│   │   ├── 📁 __tests__
+│   │   │   ├── 📄 otp-verification.test.tsx
+│   │   │   ├── 📄 reset-password.test.tsx
+│   │   │   ├── 📄 sign-in.test.tsx
+│   │   │   └── 📄 sign-up.test.tsx
+│   │   ├── 📄 _layout.tsx
+│   │   ├── 📄 choose-interests.tsx
+│   │   ├── 📄 choose-lang.tsx
+│   │   ├── 📄 choose-profile.tsx
+│   │   ├── 📄 forgot-password.tsx
+│   │   ├── 📄 onboarding.tsx
+│   │   ├── 📄 otp-verification.tsx
+│   │   ├── 📄 reset-password.tsx
+│   │   ├── 📄 sign-in.tsx
+│   │   └── 📄 sign-up.tsx
+│   ├── 📁 (feature-screens)
+│   │   ├── 📁 chat
+│   │   │   └── 📄 [thread_id].tsx
+│   │   ├── 📁 checkout
+│   │   │   ├── 📄 checkout.tsx
+│   │   │   └── 📄 pay-online.tsx
+│   │   ├── 📁 orders
+│   │   │   ├── 📄 edit-order.tsx
+│   │   │   ├── 📄 rate-user-experience.tsx
+│   │   │   ├── 📄 report-issue.tsx
+│   │   │   └── 📄 verify-delivery.tsx
+│   │   ├── 📁 products
+│   │   │   └── 📄 product-details.tsx
+│   │   └── 📁 services
+│   │       └── 📄 service-details.tsx
+│   ├── 📁 (merchant)
+│   │   ├── 📁 (auth)
+│   │   │   ├── 📁 __tests__
+│   │   │   │   ├── 📄 bank-info.test.tsx
+│   │   │   │   └── 📄 basic-info.test.tsx
+│   │   │   ├── 📄 _layout.tsx
+│   │   │   ├── 📄 bank-info.tsx
+│   │   │   └── 📄 basic-info.tsx
+│   │   └── 📁 (dashboard)
+│   │       ├── 📄 _layout.tsx
+│   │       ├── 📄 bank-info.tsx
+│   │       └── 📄 basic-info.tsx
+│   ├── 📁 (tabs)
+│   │   ├── 📁 __tests__
+│   │   │   └── 📄 home-tab.test.tsx
+│   │   ├── 📄 _layout.tsx
+│   │   ├── 📄 index.tsx
+│   │   ├── 📄 order.tsx
+│   │   ├── 📄 profile.tsx
+│   │   └── 📄 search.tsx
+│   ├── 📄 _layout.tsx
+│   └── 📄 index.tsx
+├── 📁 assets
+│   ├── 📁 fonts
+│   │   ├── 📄 CiscoSans-Bold.ttf
+│   │   ├── 📄 CiscoSans-BoldOblique.ttf
+│   │   ├── 📄 CiscoSans-ExtraLight.ttf
+│   │   ├── 📄 CiscoSans-ExtraLightOblique.ttf
+│   │   ├── 📄 CiscoSans-Heavy.ttf
+│   │   ├── 📄 CiscoSans-HeavyOblique.ttf
+│   │   ├── 📄 CiscoSans-Oblique.ttf
+│   │   ├── 📄 CiscoSans-Thin.ttf
+│   │   ├── 📄 CiscoSans-ThinOblique.ttf
+│   │   └── 📄 CiscoSans.ttf
+│   ├── 📁 icons
+│   │   ├── 📁 __tests__
+│   │   │   ├── 📄 email.test.tsx
+│   │   │   ├── 📄 file-uploaded-success.test.tsx
+│   │   │   ├── 📄 lock.test.tsx
+│   │   │   ├── 📄 password-eye-hide.test.tsx
+│   │   │   └── 📄 password-eye.test.tsx
+│   │   ├── 📁 misc
+│   │   │   └── 📄 fire.tsx
+│   │   ├── 📁 tabs
+│   │   │   ├── 📄 home.tsx
+│   │   │   ├── 📄 orders.tsx
+│   │   │   ├── 📄 profile.tsx
+│   │   │   ├── 📄 search.tsx
+│   │   │   └── 📄 tools.tsx
+│   │   ├── 📄 arrow-right.tsx
+│   │   ├── 📄 call.tsx
+│   │   ├── 📄 check-badge.tsx
+│   │   ├── 📄 email.tsx
+│   │   ├── 📄 file-uploaded-success.tsx
+│   │   ├── 📄 google.tsx
+│   │   ├── 📄 location.tsx
+│   │   ├── 📄 lock.tsx
+│   │   ├── 📄 password-eye-hide.tsx
+│   │   ├── 📄 password-eye.tsx
+│   │   ├── 📄 profile-round.tsx
+│   │   ├── 📄 shield.tsx
+│   │   ├── 📄 trash.tsx
+│   │   └── 📄 upload.tsx
+│   └── 📁 images
+│       ├── 📁 illustrations
+│       │   ├── 📁 action-illustrations
+│       │   │   ├── 🖼️ delete-ill.png
+│       │   │   ├── 🖼️ delivery-verified-ill.png
+│       │   │   ├── 🖼️ otp-ill.png
+│       │   │   └── 🖼️ promote-product-ill.png
+│       │   ├── 📁 categories
+│       │   │   ├── 🖼️ categories-1.png
+│       │   │   ├── 🖼️ categories-2.png
+│       │   │   ├── 🖼️ categories-3.png
+│       │   │   ├── 🖼️ categories-4.png
+│       │   │   └── 🖼️ categories-5.png
+│       │   ├── 📁 interests
+│       │   │   ├── 🖼️ interests-1.png
+│       │   │   ├── 🖼️ interests-10.png
+│       │   │   ├── 🖼️ interests-2.png
+│       │   │   ├── 🖼️ interests-3.png
+│       │   │   ├── 🖼️ interests-4.png
+│       │   │   ├── 🖼️ interests-5.png
+│       │   │   ├── 🖼️ interests-6.png
+│       │   │   ├── 🖼️ interests-7.png
+│       │   │   ├── 🖼️ interests-8.png
+│       │   │   └── 🖼️ interests-9.png
+│       │   ├── 📁 misc
+│       │   │   ├── 🖼️ card-bg.png
+│       │   │   ├── 🖼️ card-bg@2x.png
+│       │   │   ├── 🖼️ card-bg@3x.png
+│       │   │   ├── 🖼️ deal-dashboard.png
+│       │   │   └── 🖼️ pig-ill.png
+│       │   └── 📁 onboarding
+│       │       ├── 🖼️ onboard-1.png
+│       │       ├── 🖼️ onboard-2.png
+│       │       ├── 🖼️ onboard-buy-profile.png
+│       │       └── 🖼️ onboard-sell-profile.png
+│       ├── 📁 logo
+│       │   ├── 🖼️ kasuwa-logo.png
+│       │   └── 🖼️ kasuwa-text.png
+│       ├── 🖼️ icon.png
+│       ├── 🖼️ kasuwa-bg-gradient.png
+│       ├── 🖼️ splash-icon.png
+│       └── 🖼️ splash-screen.png
+├── 📁 components
+│   ├── 📁 ui
+│   │   ├── 📁 __tests__
+│   │   │   ├── 📄 action-header.test.tsx
+│   │   │   ├── 📄 button.test.tsx
+│   │   │   ├── 📄 file-upload.test.tsx
+│   │   │   ├── 📄 file-uploaded.test.tsx
+│   │   │   ├── 📄 screen.test.tsx
+│   │   │   ├── 📄 tab-header.test.tsx
+│   │   │   └── 📄 themed-text.test.tsx
+│   │   ├── 📁 gluestack-ui-provider
+│   │   │   ├── 📄 index.tsx
+│   │   │   └── 📄 script.ts
+│   │   ├── 📄 action-header.tsx
+│   │   ├── 📄 auth-input.tsx
+│   │   ├── 📄 button.tsx
+│   │   ├── 📄 dropdown-menu.tsx
+│   │   ├── 📄 external-link.tsx
+│   │   ├── 📄 file-upload.tsx
+│   │   ├── 📄 file-uploaded.tsx
+│   │   ├── 📄 icon.tsx
+│   │   ├── 📄 list-picker.tsx
+│   │   ├── 📄 native-only-animated-view.tsx
+│   │   ├── 📄 notice-card.tsx
+│   │   ├── 📄 phone-number-field.tsx
+│   │   ├── 📄 radio-group.tsx
+│   │   ├── 📄 screen-scroll-view.tsx
+│   │   ├── 📄 screen.tsx
+│   │   ├── 📄 skeleton.tsx
+│   │   ├── 📄 state-picker.tsx
+│   │   ├── 📄 tab-header.tsx
+│   │   ├── 📄 text.tsx
+│   │   └── 📄 themed-text.tsx
+│   └── 📄 haptic-tab.tsx
+├── 📁 context
+│   ├── 📄 AuthContext.tsx
+│   └── 📄 LanguageContext.tsx
+├── 📁 features
+│   ├── 📁 auth
+│   │   ├── 📁 components
+│   │   │   ├── 📁 __tests__
+│   │   │   │   ├── 📄 sign-in-form.test.tsx
+│   │   │   │   └── 📄 sign-up-form.test.tsx
+│   │   │   ├── 📄 illustration-frame.tsx
+│   │   │   ├── 📄 onboarding-content.tsx
+│   │   │   ├── 📄 onboarding-interests-card.tsx
+│   │   │   ├── 📄 onboarding-profile-card.tsx
+│   │   │   ├── 📄 sign-in-form.tsx
+│   │   │   └── 📄 sign-up-form.tsx
+│   │   ├── 📁 services
+│   │   │   ├── 📄 google-auth.ts
+│   │   │   ├── 📄 mutations.ts
+│   │   │   └── 📄 queries.ts
+│   │   └── 📄 types.ts
+│   ├── 📁 chat
+│   │   └── 📄 types.ts
+│   ├── 📁 checkout
+│   │   ├── 📁 services
+│   │   │   ├── 📄 checkout.ts
+│   │   │   ├── 📄 completed-orders.tsx
+│   │   │   └── 📄 pay-online.ts
+│   │   └── 📄 types.ts
+│   ├── 📁 marketplace
+│   │   ├── 📁 components
+│   │   │   ├── 📁 __tests__
+│   │   │   │   └── 📄 sub-category-card.test.tsx
+│   │   │   ├── 📄 category-card.tsx
+│   │   │   └── 📄 sub-category-card.tsx
+│   │   ├── 📁 services
+│   │   │   ├── 📄 product-promotion.ts
+│   │   │   ├── 📄 product.ts
+│   │   │   ├── 📄 products.ts
+│   │   │   └── 📄 services.ts
+│   │   └── 📄 types.ts
+│   ├── 📁 merchants
+│   │   ├── 📁 components
+│   │   │   ├── 📁 __tests__
+│   │   │   └── 📄 service-chip.tsx
+│   │   └── 📁 services
+│   │       ├── 📄 mutations.ts
+│   │       └── 📄 queries.ts
+│   ├── 📁 orders
+│   │   ├── 📁 components
+│   │   │   ├── 📄 cart-order-card.tsx
+│   │   │   ├── 📄 completed-order-card.tsx
+│   │   │   └── 📄 ongoing-order-card.tsx
+│   │   ├── 📁 screens
+│   │   │   ├── 📄 completed-orders.tsx
+│   │   │   ├── 📄 my-cart.tsx
+│   │   │   └── 📄 ongoing-orders.tsx
+│   │   └── 📄 types.ts
+│   ├── 📁 search
+│   │   ├── 📁 components
+│   │   │   ├── 📄 filter-bar.tsx
+│   │   │   └── 📄 product-card.tsx
+│   │   ├── 📁 services
+│   │   │   └── 📄 search.ts
+│   │   └── 📄 types.ts
+│   └── 📁 verification
+│       └── 📄 types.ts
+├── 📁 i18next
+│   ├── 📁 locales
+│   │   ├── 📄 en.ts
+│   │   ├── 📄 ff.ts
+│   │   ├── 📄 fr.ts
+│   │   ├── 📄 ha.ts
+│   │   ├── 📄 ig.ts
+│   │   ├── 📄 pcm.ts
+│   │   └── 📄 yo.ts
+│   ├── 📄 i18n.ts
+│   └── 📄 types.ts
+├── 📁 lib
+│   ├── 📁 __tests__
+│   │   └── 📄 utils.test.ts
+│   └── 📄 utils.ts
+├── 📁 shared
+│   ├── 📁 data
+│   └── 📁 theme
+│       ├── 📄 colors.ts
+│       ├── 📄 index.ts
+│       ├── 📄 textStyles.ts
+│       └── 📄 typography.ts
+├── 📁 utils
+│   ├── 📁 __tests__
+│   │   └── 📄 helpers.test.ts
+│   ├── 📄 constants.ts
+│   ├── 📄 helpers.hook.tsx
+│   └── 📄 helpers.ts
+├── ⚙️ .npmrc
+├── 📝 README.md
+├── 📄 app.config.js
+├── 📄 babel.config.js
+├── ⚙️ components.json
+├── ⚙️ eas.json
+├── 📄 eslint.config.js
+├── 🎨 global.css
+├── 📄 jest.config.js
+├── 📄 jest.setup.files.js
+├── 📄 jest.setup.js
+├── 📄 metro.config.js
+├── ⚙️ package-lock.json
+├── ⚙️ package.json
+├── ⚙️ tsconfig.json
+└── 📄 uniwind-types.d.ts
+```
+
+---
+*Generated by FileTree Pro Extension*
